@@ -1,0 +1,90 @@
+//##### IMPORTS MODULES ########
+@use "colors";
+@use "positions";
+@use "fonts";
+@use "sizes";
+@use "images";
+
+
+//################# HEADER #################
+@mixin logo-config {
+    @include positions.start;
+}
+@mixin header-config {
+    @include positions.between;
+    background-color: colors.$menu-color;
+}
+//###### NAVEGAÇÃO ###########
+@mixin nav-position {
+    @include positions.between;
+    padding: 0 15px;
+}
+@mixin nav-btn {
+    background-color: colors.$menu-border-btn;
+    margin-left: 15px;
+    padding: 5px;
+    border: none;
+    text-transform: uppercase;
+}
+@mixin nav-hover {
+    background: colors.$hover-color;
+    a {
+        color: #fff;
+    }
+}
+// ###### FONTS ##########
+
+@mixin font-header {
+    font-weight: bold;
+    color: colors.$text-logo-color;
+    font-family: fonts.$font-principal;
+    border-radius: 10px;
+}
+@mixin nav-font-btn {
+    font-weight: 600;
+    color: rgba(0, 121, 190, 0.774);
+    font-size: sizes.$size-nav-font;
+    font-family: fonts.$font-principal;
+}
+
+@mixin font-banner {
+    text-transform: uppercase;
+    color: white;
+    font-size: 4em;
+    padding-top: 50px;
+    font-family: fonts.$font-conteudo;
+}
+
+@mixin font-p-banner {
+    width: 800px;
+    color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.452);
+    font-family: fonts.$font-conteudo;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+// ##### IMAGENS #########
+
+@mixin size-logo {
+    width: sizes.$size-img-logo;
+}
+
+@mixin banner-img {
+    background: url(images.$img-banner) center #333 no-repeat;
+    background-size: cover;
+    box-shadow: 0 2px 5px black;
+    height: 280px;
+    margin-bottom: 15px;
+}
+
+@mixin img-cards {
+    @for $cards from 1 through 10 {
+        .card-#{$cards} {
+            background: url(../img/cat#{$cards}.jpg);
+            background-size: cover; 
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+        }
+    }
+}

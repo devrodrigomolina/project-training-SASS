@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,100;1,200;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 121, 190, 0.774);
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .logo img {
+  width: 80px;
+}
+header .logo h1 {
+  font-weight: bold;
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+header nav ul .btn-1 {
+  background-color: white;
+  margin-left: 15px;
+  padding: 5px;
+  border: none;
+  text-transform: uppercase;
+}
+header nav ul .btn-1:hover {
+  background: rgba(1, 98, 155, 0.774);
+}
+header nav ul .btn-1:hover a {
+  color: #fff;
+}
+header nav ul .btn-2 {
+  background-color: white;
+  margin-left: 15px;
+  padding: 5px;
+  border: none;
+  text-transform: uppercase;
+}
+header nav ul .btn-2:hover {
+  background: rgba(1, 98, 155, 0.774);
+}
+header nav ul .btn-2:hover a {
+  color: #fff;
+}
+header nav ul .btn-3 {
+  background-color: white;
+  margin-left: 15px;
+  padding: 5px;
+  border: none;
+  text-transform: uppercase;
+}
+header nav ul .btn-3:hover {
+  background: rgba(1, 98, 155, 0.774);
+}
+header nav ul .btn-3:hover a {
+  color: #fff;
+}
+header nav ul .btn-4 {
+  background-color: white;
+  margin-left: 15px;
+  padding: 5px;
+  border: none;
+  text-transform: uppercase;
+}
+header nav ul .btn-4:hover {
+  background: rgba(1, 98, 155, 0.774);
+}
+header nav ul .btn-4:hover a {
+  color: #fff;
+}
+header nav ul .btn-5 {
+  background-color: white;
+  margin-left: 15px;
+  padding: 5px;
+  border: none;
+  text-transform: uppercase;
+}
+header nav ul .btn-5:hover {
+  background: rgba(1, 98, 155, 0.774);
+}
+header nav ul .btn-5:hover a {
+  color: #fff;
+}
+header nav ul li {
+  font-weight: bold;
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+}
+header nav ul li a {
+  font-weight: 600;
+  color: rgba(0, 121, 190, 0.774);
+  font-size: 0.8em;
+  font-family: "Poppins", sans-serif;
+}
+
+main .banner {
+  background: url("https://cdn.glitch.com/a5121e34-96b3-4a70-8227-040c51e64fae%2Fcat.jpg?1509635989509") center #333 no-repeat;
+  background-size: cover;
+  box-shadow: 0 2px 5px black;
+  height: 280px;
+  margin-bottom: 15px;
+}
+main .banner h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 4em;
+  padding-top: 50px;
+  font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .banner p {
+  width: 800px;
+  color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.452);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1em;
+  text-align: center;
+  margin: 0 auto;
+}
+main .cards {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: 25vh 25vh 25vh;
+  grid-gap: 5px;
+  width: 1800px;
+  margin: 0 auto;
+}
+main .cards .card-1 {
+  background: url(../img/cat1.jpg);
+  background-size: cover;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+}
+main .cards .card-2 {
+  background: url(../img/cat2.jpg);
+  background-size: cover;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+}
+main .cards .card-3 {
+  background: url(../img/cat3.jpg);
+  background-size: cover;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+}
+main .cards .card-4 {
+  background: url(../img/cat4.jpg);
+  background-size: cover;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+}
+main .cards .card-5 {
+  background: url(../img/cat5.jpg);
+  background-size: cover;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+}
+main .cards .card-6 {
+  background: url(../img/cat6.jpg);
+  background-size: cover;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+}
+main .cards .card-7 {
+  background: url(../img/cat7.jpg);
+  background-size: cover;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+}
+main .cards .card-8 {
+  background: url(../img/cat8.jpg);
+  background-size: cover;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+}
+main .cards .card-9 {
+  background: url(../img/cat9.jpg);
+  background-size: cover;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+}
+main .cards .card-10 {
+  background: url(../img/cat10.jpg);
+  background-size: cover;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+}
+
+footer {
+  font-weight: bold;
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0892b4;
+  margin-top: 35px;
+  width: 100vw;
+  height: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

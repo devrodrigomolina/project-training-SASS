@@ -1,0 +1,71 @@
+//######## IMPORTS MODULES ########
+@use "reset";
+@use "mixins";
+@use "sizes";
+@use "positions";
+@use "images";
+@use "colors";
+// #################################
+
+header {
+    @include mixins.header-config;
+    .logo {
+        @include mixins.logo-config;
+        img {
+            @include mixins.size-logo;
+        }
+        h1 {
+            @include mixins.font-header;
+        }
+    }
+    nav {
+        ul {
+            @include mixins.nav-position;
+
+            @for $i from 1 through 5 {
+                .btn-#{$i} {
+                    @include mixins.nav-btn;
+                    &:hover {
+                        @include mixins.nav-hover;
+                    }
+                }
+            }
+            
+            li {
+                @include mixins.font-header;
+                
+                a {
+                    @include mixins.nav-font-btn;
+                }
+            }
+        }
+    }
+}
+
+main {
+    .banner {
+        @include mixins.banner-img;
+        h1 {
+            @include mixins.font-banner;
+            @include positions.center;
+        }
+        p {
+            @include mixins.font-p-banner;
+        }
+    }
+    .cards {
+        @include mixins.img-cards;
+        @include positions.grid-conteudo;
+        width: 1800px;
+        margin: 0 auto;
+    }
+}
+
+footer {
+    @include mixins.font-header;
+    @include positions.center;
+    background-color: colors.$h-color;
+    margin-top: 35px;
+    width: 100vw;
+    height: 40px;
+}

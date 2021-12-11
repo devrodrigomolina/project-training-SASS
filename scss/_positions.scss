@@ -1,0 +1,29 @@
+// ######### FLEX BOX ###########
+@mixin between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+@mixin end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+//######## GRIDS ########
+@mixin grid-conteudo {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 25vh 25vh 25vh;
+    grid-gap: 5px;
+}
